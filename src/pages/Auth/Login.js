@@ -50,10 +50,10 @@ import { generateKeywords } from "../../firebase/services";
 
         await setDoc(doc(db, "users", auth.currentUser.uid), {
           uid: auth.currentUser.uid,
-          displayName:auth.currentUser.uid,
+          displayName:auth.currentUser.displayName,
           email:auth.currentUser.email,
           photoURL: auth.currentUser.photoURL,
-          keywords: generateKeywords(auth.currentUser.displayName?.toLowerCase()),
+          keywords: generateKeywords(auth.currentUser.displayName),
         });
 
         await setDoc(doc(db, "userChats",auth.currentUser.uid), {}); 
