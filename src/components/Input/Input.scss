@@ -1,0 +1,47 @@
+.input {
+    height: 75px;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    input {
+        width: 100%;
+        border: none;
+        outline: none;
+        color: #2f2d52;
+        font-size: 18px;
+
+        &::placeholder {
+            color: lightgray;
+        }
+    }
+
+    img {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+
+    .send {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+
+        button {
+            border: none;
+            padding: 10px 15px;
+            color: black;
+            background-color: transparent;
+            cursor: pointer;
+            
+        }
+    }
+}
+
+

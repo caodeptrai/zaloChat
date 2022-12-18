@@ -1,0 +1,99 @@
+.infoGroupWrap {
+    height: 100vh;
+    width: 100%;
+    border-left: 1px solid #ccc;
+}
+
+.groupTitle {
+    text-align: center;
+    font-weight: 600;
+    padding-top: 24px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 18px;
+}
+.inviteMemberBtn {
+      width: 60%;
+    border-radius: 10px;
+    background-color: rgb(238, 234, 234);
+    border: 1px solid transparent;
+    margin: 24px 0;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.inviteMemberIcon {
+    padding-right: 6px;
+}
+
+.listDes {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+     text-align: justify;
+     padding-left: 12px;
+}
+
+.memberList {
+    margin-top: 12px;
+    overflow-y: scroll;
+}
+
+.infoMember {
+    display: flex;
+    justify-content: space-between;
+     padding: 12px;
+
+     .displayNameMember {
+        font-size: 16px;
+        font-weight: 500;
+     }
+
+     .memberOption {
+        display: none;
+     }
+    
+    &:hover {
+        background-color: #ccc;
+        cursor: pointer;
+
+        .memberOption {
+
+            display: block;
+        }
+    }
+
+    .optionBtn {
+        border: 1px solid transparent;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+ 
+}
+
+
+.optionItem {
+
+    font-size: 14px;
+    font-weight: 600;
+
+    &:hover {
+        color: red;
+        cursor: pointer;
+    }
+   
+}
+
+.avatarMember {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.displayNameMember {
+    margin-left: 8px;
+    font-size: 20px;
+    font-weight: 500;
+}

@@ -1,0 +1,21 @@
+
+
+.custom {
+    margin-top: 20px;
+    //  padding-top: 20px;
+    width: 70%;
+    // border: 1px solid red;
+    // border-radius: 10px;
+}
+
+// .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+//     background-color: transparent; 
+//     border:none;
+// }
+// ::selection {
+//     background-color: transparent;
+// }
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border-radius: 8px;
+    
+}
