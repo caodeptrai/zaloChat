@@ -69,7 +69,7 @@ async function fetchUserList(search,curMembers) {
   
     const q = query(
         collection(db, "users"),
-        where("keywords", "array-contains", search?.toLowerCase())
+        where("keywords", "array-contains", search)
       );
 
     const querySnapshot = await getDocs(q);
