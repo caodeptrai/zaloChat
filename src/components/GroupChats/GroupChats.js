@@ -38,7 +38,7 @@ const GroupChats = () => {
              <img src={room.photoURL} alt="" />
              <div className="userChatInfo">
                <span>{room.displayName}</span>
-               {room.lastMessage?.text ? <p>{room.lastMessage.text}</p> : <p></p>}
+               {room.lastMessage?.text ? <p className="text">{room.lastMessage.text}</p> : <p className="text"></p>}
              </div>
              </div>
             ))}
